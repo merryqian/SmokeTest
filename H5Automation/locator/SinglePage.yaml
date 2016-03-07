@@ -1,0 +1,123 @@
+H5Load:
+  type:xpath
+  value:"html/body/div[1]/div[2]/p"
+ScrollView:
+  type:xpath
+  value:""
+SinglePageLoad:
+  type:xpath
+  value:".//*[@id='product']/a"
+GoodName:
+  type:xpath
+  value:".//*[@id='scroller']/div[4]/div[1]/a"
+GoodPrice:
+  type:xpath
+  value:".//*[@id='scroller']/div[4]/div[2]/span"
+GoodNoEvalute:
+  type:xpath
+  value:".//*[@id='scroller']/div[8]/div[2]"
+GoodEvaluate:
+  type:xpath
+  value:".//*[@id='scroller']/div[8]/div[1]"
+GoodMark:
+  type:xpath
+  value:".//*[@id='scroller']/div[8]/div[1]/div[2]"
+GoodStar:
+  type:xapth
+  value:".//*[@id='scroller']/div[8]/div[1]/div[3]/div"
+GoodEvaCount:
+  type:xpath
+  value:".//*[@id='scroller']/div[8]/div[1]/div[4]/a"
+GoodPromotion:
+  type:xpath
+  value:".//*[@id='scroller']/div[5]/div[1]"
+GoodPromotionType:
+  type:xpath
+  value:".//*[@id='scroller']/div[5]/div[2]/i"
+PromotionClick:
+  type:xpath
+  value:".//*[@id='scroller']/div[5]"
+PromotionName:
+  type:xpath
+  value:".//*[@id='scroller']/div[5]/div[3]/ul/li"
+goodEvaluate:
+  type:xpath
+  value:".//*[@id='scroller']/div[8]/div[1]/div[4]/a"
+AddShoppingCartButton:
+  type:id
+  value:addButton
+CustomerService:
+  type:xpath
+  value:".//*[@id='scroller']/div[6]/div[1]"
+ServiceContent:
+  type:xpath
+  value:".//*[@id='scroller']/div[5]/div[2]/div[1]"
+SupplierCheckBySelf:
+  type:xpath
+  value:".//*[@id='scroller']/div[4]/div[1]/a/i"
+TakeBySelf:
+  type:xpath
+  value:"//span[contains(text(),'支持自提')]"
+ReturnOrChangeGoodsNotSupported:
+  type:xpath
+  value:"//span[contains(text(),'不支持7天无理由退换货')]"
+ReturnOrChangeGoodsSupported:
+  type:xpath
+  value:".//*[@id='scroller']/div[6]/div[2]/div[2]/div/span"
+CODSupport:
+  type:xpath
+  value:".//*[@id='scroller']/div[6]/div[2]/div[2]/div/span"
+Chooice:
+  type:xpath
+  value:".//*[@id='scroller']/div[7]/div[1]"
+Specification:
+  type:xpath
+  value:".//*[@id='scroller']/div[7]/div[2]/i"
+Red:
+  type:xpath
+  value:".//*[@id='totalAtrbuteTypeIdx_172']"
+SKUAttributeBtn:
+  type:id
+  value:3_114468
+GoodNum:
+  type:xpath
+  value:"html/body/div[1]/div[2]/div/div"
+NumAfter:
+  type:xpath
+  value:"html/body/div[1]/div[2]/div/div"
+AddButton:
+  type:id
+  value:addButton
+AddSuccess:
+  type:xpath
+  value:".//*[@id='main']/div[3]"
+InputNum:
+  type:id
+  value:proNumInput
+IncreaseGoodNum:
+  type:xpath
+  value:"html/body/div[3]/div/div[3]/img"
+DecreaseGoodNum:
+  type:xpath
+  value:"html/body/div[3]/div/div[1]/img"
+KuCunBuZu:
+  type:xpath
+  value:".//*[@id='main']/div[3]"
+OutOfStock:
+  type:id
+  value:productStor
+GoodDetails:
+  type:xpath
+  value:".//*[@id='desc']/a"
+Details:
+  type:xpath
+  value:".//*[@id='scroller']/div[11]/div/div/p"
+GoodRecommend:
+  type:xpath
+  value:".//*[@id='scroller']/div[9]"
+RecommendGoodsList:
+  type:xpath
+  value:".//*[@id='scroller']/div[10]/div/ul/li"
+RecommendGoodsName:
+  type:xpath
+  value:"/div/div[2]/a"

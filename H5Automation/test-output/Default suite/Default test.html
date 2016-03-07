@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 07 12:12:18 CST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>189 seconds (189118 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_05_ChargeFee.freshGoodsDeliveryFee()'><b>freshGoodsDeliveryFee</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_05_ChargeFee<br>Parameters: {password=snail123, deliveryFee=15, productID=200706, Level1Amount=99, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-932582590" onClick='toggleBox("Output-932582590", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-932582590" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-932582590">
+2016-03-07 12:12:33 : 定位到首页的登录按钮位置<br/>
+2016-03-07 12:12:33 : 点击首页的登录按钮入口<br/>
+2016-03-07 12:12:33 : 用户名=18616781132<br/>
+2016-03-07 12:12:33 : 密码=snail123<br/>
+2016-03-07 12:12:34 : 点击登录按钮<br/>
+2016-03-07 12:12:44 : 登录成功后跳转回首页<br/>
+2016-03-07 12:12:44 : 点击首页的购物车按钮<br/>
+2016-03-07 12:12:44 : 购物车无商品<br/>
+2016-03-07 12:12:48 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 12:12:48 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 12:12:48 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 12:12:49 : 商品总额= 139.6<br/>
+2016-03-07 12:12:49 : 运费= 0.0<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_05_ChargeFee.freshGoodsNoDeliveryFee()'><b>freshGoodsNoDeliveryFee</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_05_ChargeFee<br>Parameters: {password=snail123, deliveryFee=0, productID=178555, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-846918683" onClick='toggleBox("Output-846918683", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-846918683" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-846918683">
+2016-03-07 12:13:02 : 定位到首页的登录按钮位置<br/>
+2016-03-07 12:13:02 : 点击首页的登录按钮入口<br/>
+2016-03-07 12:13:03 : 用户名=18616781132<br/>
+2016-03-07 12:13:03 : 密码=snail123<br/>
+2016-03-07 12:13:03 : 点击登录按钮<br/>
+2016-03-07 12:13:13 : 登录成功后跳转回首页<br/>
+2016-03-07 12:13:14 : 点击首页的购物车按钮<br/>
+2016-03-07 12:13:14 : 购物车有商品<br/>
+2016-03-07 12:13:14 : 清空购物车<br/>
+2016-03-07 12:13:17 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 12:13:17 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 12:13:17 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 12:13:19 : 商品总额= 115.0<br/>
+2016-03-07 12:13:19 : 运费= 0.0<br/>
+2016-03-07 12:13:19 : 生鲜商品运费校验 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_05_ChargeFee.normalGoodsScenario1()'><b>normalGoodsScenario1</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_05_ChargeFee<br>Parameters: {password=snail123, productID=96361, scenario=小于48元重量小于等于5kg常温商品, deliveryWeight=0.6, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-1201466784" onClick='toggleBox("Output-1201466784", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1201466784" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1201466784">
+2016-03-07 12:13:31 : 定位到首页的登录按钮位置<br/>
+2016-03-07 12:13:32 : 点击首页的登录按钮入口<br/>
+2016-03-07 12:13:32 : 用户名=18616781132<br/>
+2016-03-07 12:13:32 : 密码=snail123<br/>
+2016-03-07 12:13:32 : 点击登录按钮<br/>
+2016-03-07 12:13:43 : 登录成功后跳转回首页<br/>
+2016-03-07 12:13:43 : 点击首页的购物车按钮<br/>
+2016-03-07 12:13:46 : 购物车有商品<br/>
+2016-03-07 12:13:46 : 清空购物车<br/>
+2016-03-07 12:13:49 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 12:13:50 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 12:13:50 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 12:13:51 : [运费]  deliveryFee=5.0<br/>
+2016-03-07 12:13:51 : 商品总额= 15.8<br/>
+2016-03-07 12:13:51 : 商品总重量= 0.6<br/>
+2016-03-07 12:13:51 : 配送方式=物流配送<br/>
+2016-03-07 12:13:51 : 实际显示的运费= 5.0<br/>
+2016-03-07 12:13:51 : 小于48元重量小于等于5kg常温商品 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_05_ChargeFee.normalGoodsScenario2()'><b>normalGoodsScenario2</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_05_ChargeFee<br>Parameters: {password=snail123, productID=86859, scenario=小于48元重量大于5kg常温商品-自营, deliveryWeight=7.0, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-1513867245" onClick='toggleBox("Output-1513867245", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1513867245" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1513867245">
+2016-03-07 12:14:05 : 定位到首页的登录按钮位置<br/>
+2016-03-07 12:14:05 : 点击首页的登录按钮入口<br/>
+2016-03-07 12:14:05 : 用户名=18616781132<br/>
+2016-03-07 12:14:05 : 密码=snail123<br/>
+2016-03-07 12:14:05 : 点击登录按钮<br/>
+2016-03-07 12:14:16 : 登录成功后跳转回首页<br/>
+2016-03-07 12:14:16 : 点击首页的购物车按钮<br/>
+2016-03-07 12:14:16 : 购物车有商品<br/>
+2016-03-07 12:14:16 : 清空购物车<br/>
+2016-03-07 12:14:19 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 12:14:20 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 12:14:20 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 12:14:21 : [运费]  deliveryFee=7.0<br/>
+2016-03-07 12:14:21 : 商品总额= 14.2<br/>
+2016-03-07 12:14:21 : 商品总重量= 7.0<br/>
+2016-03-07 12:14:21 : 配送方式=物流配送<br/>
+2016-03-07 12:14:21 : 实际显示的运费= 7.0<br/>
+2016-03-07 12:14:21 : 小于48元重量大于5kg常温商品-自营 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_05_ChargeFee.normalGoodsScenario3()'><b>normalGoodsScenario3</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_05_ChargeFee<br>Parameters: {password=snail123, productID=67042, scenario=大于等于48元重量小于5kg常温商品-自营, deliveryWeight=0.375, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-1611832218" onClick='toggleBox("Output-1611832218", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1611832218" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1611832218">
+2016-03-07 12:14:34 : 定位到首页的登录按钮位置<br/>
+2016-03-07 12:14:34 : 点击首页的登录按钮入口<br/>
+2016-03-07 12:14:35 : 用户名=18616781132<br/>
+2016-03-07 12:14:35 : 密码=snail123<br/>
+2016-03-07 12:14:35 : 点击登录按钮<br/>
+2016-03-07 12:14:46 : 登录成功后跳转回首页<br/>
+2016-03-07 12:14:46 : 点击首页的购物车按钮<br/>
+2016-03-07 12:14:46 : 购物车有商品<br/>
+2016-03-07 12:14:46 : 清空购物车<br/>
+2016-03-07 12:14:49 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 12:14:49 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 12:14:49 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 12:14:50 : [运费]  deliveryFee=0.0<br/>
+2016-03-07 12:14:50 : 商品总额= 106.0<br/>
+2016-03-07 12:14:50 : 商品总重量= 0.375<br/>
+2016-03-07 12:14:50 : 配送方式=物流配送<br/>
+2016-03-07 12:14:50 : 实际显示的运费= 0.0<br/>
+2016-03-07 12:14:50 : 大于等于48元重量小于5kg常温商品-自营 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_05_ChargeFee.normalGoodsScenario4()'><b>normalGoodsScenario4</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_05_ChargeFee<br>Parameters: {password=snail123, productID=65791, scenario=大于48重量大于5KG的常温商品-自营, deliveryWeight=10, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-1072506992" onClick='toggleBox("Output-1072506992", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1072506992" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1072506992">
+2016-03-07 12:15:04 : 定位到首页的登录按钮位置<br/>
+2016-03-07 12:15:05 : 点击首页的登录按钮入口<br/>
+2016-03-07 12:15:05 : 用户名=18616781132<br/>
+2016-03-07 12:15:06 : 密码=snail123<br/>
+2016-03-07 12:15:06 : 点击登录按钮<br/>
+2016-03-07 12:15:16 : 登录成功后跳转回首页<br/>
+2016-03-07 12:15:16 : 点击首页的购物车按钮<br/>
+2016-03-07 12:15:17 : 购物车有商品<br/>
+2016-03-07 12:15:17 : 清空购物车<br/>
+2016-03-07 12:15:25 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 12:15:26 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 12:15:26 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 12:15:27 : [运费]  deliveryFee=5.0<br/>
+2016-03-07 12:15:27 : 商品总额= 66.8<br/>
+2016-03-07 12:15:27 : 商品总重量= 10.0<br/>
+2016-03-07 12:15:27 : 配送方式=物流配送<br/>
+2016-03-07 12:15:27 : 实际显示的运费= 5.0<br/>
+2016-03-07 12:15:27 : 大于48重量大于5KG的常温商品-自营 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff</td></tr>
+</table><p>
+</body>
+</html>

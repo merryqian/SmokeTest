@@ -1,0 +1,135 @@
+location:
+  type:xpath
+  value:".//*[@id='mySwipe2']/div/div/a/img"
+loginEntrance:
+  type:xpath
+  value:".//*[@id='main']/div/section[4]/div/a"
+logo:
+  type:xpath
+  value:"html/body/main/div[1]/a/img"
+search:
+  type:xpath
+  value:".//*[@id='main']/div/header/div"
+keySearch:
+  type:id
+  value:Keyserarch
+keywordList:
+  type:id
+  value:keywordslist
+goodList:
+  type:xpath
+  value:".//*[@id='goodslist']/li[1]"
+noGoods:
+  type:xpath
+  value:".//*[@id='main']/div[3]"
+addButtonList:
+  type:xpath
+  value:".//*[@id='goodslist']/li[1]/div/a"
+addSuccess:
+  type:xpath
+  value:"html/body/div[4]"
+fastBar:
+  type:xpath
+  value:".//*[@id='main']/div[1]/div/a/span"
+shoppingcart:
+  type:xpath
+  value:".//*[@id='main']/div[1]/div/nav/ul/li[4]/a/p"
+submitBtn:
+  type:id
+  value:submitBtn
+addButton:
+  type:id
+  value:addButton
+singleFastBar:
+  type:xpath
+  value:"html/body/div[1]/div[2]/a/span"
+singleAddSuccess:
+  type:xpath
+  value:".//*[@id='main']/div[3]"
+shoppingcartSingle:
+  type:xpath
+  value:"html/body/div[1]/div[2]/nav/ul/li[4]/a/p"
+noStock:
+  type:xpath
+  value:".//*[@id='productStor']"
+shoppingcartInFirstPage:
+  type:xpath
+  value:".//*[@id='main']/div/header/a[1]"
+loginRightNow:
+  type:xpath
+  value:"html/body/div[1]"
+loginNow:
+  type:xpath
+  value:"html/body/div[1]/a"
+userName:
+  type:id
+  value:lgoinName
+password:
+  type:id
+  value:pwd
+loginButton:
+  type:id
+  value:loginButton
+noGoodsInShoppingCart:
+  type:xpath
+  value:"html/body/div[1]/div[2]"
+toOrderPaySubmit:
+  type:id
+  value:"submitBtn"
+headTitle:
+  type:xpath
+  value:"html/body/header/div/div"
+actualOrderPay:
+  type:xpath
+  value:".//*[@id='paymentOrderPanel']/div[2]/div[1]/div[1]"
+toPayOrder:
+  type:id
+  value:toPayButton
+allChosen:
+  type:xpath
+  value:"html/body/div[5]/div/div[1]/div/label/input"
+noGoodsSubmitAlert:
+  type:xpath
+  value:"html/body/div[6]"
+GoodsEdit:
+  type:xpath
+  value:".//div/div[2]/div[3]/a"
+buyNumber:
+  type:name
+  value:buyNumberInput
+StockCheckAlert:
+  type:xpath
+  value:"html/body/div[6]"
+noStockNum:
+  type:xpath
+  value:"//div[contains(text(),'无 货')]"
+xiaJiaNum:
+  type:xpath
+  value:"//div[contains(text(),'已下架')]"
+shanGouNum:
+  type:xpath
+  value:"//i[contains(text(),'闪购')]"
+actualGoodsNum:
+  type:xpath
+  value:"//div[@class='cart-show-list']"
+goodCheckBox:
+  type:xpath
+  value:"//div[@class='cart-show-list']/div/label/input"
+canNotBuyImg:
+  type:xpath
+  value:"//div[@class='cart-show-list']/div/label/img[@name='canNotBuyImg']"
+goodsNum:
+  type:xpath
+  value:"//div[@class='cart-show-list'][2]/div/div/div/div/div/span"
+goodsNumInShoppingCart:
+  type:xpath
+  value:"//div/div[2]/div[2]/div[2]"
+shoppingCart:
+  type:xpath
+  value:".//*[@id='main']/div/header/a[1]"
+notHasProductContext:
+  type:xpath
+  value:".//*[@id='notHasProductContext']/div[2]"
+AddSuccessInSinglePage:
+  type:xpath
+  value:".//*[@id='main']/div[3]"

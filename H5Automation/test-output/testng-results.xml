@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[2016-03-07 12:12:33 : 定位到首页的登录按钮位置]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:12:33 : 点击首页的登录按钮入口]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:12:33 : 用户名=18616781132]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:12:33 : 密码=snail123]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:12:34 : 点击登录按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:12:44 : 登录成功后跳转回首页]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:12:44 : 点击首页的购物车按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:12:44 : 购物车无商品]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:12:48 : 成功提示信息： 加入购物车成功]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:12:48 : 该商品在购物车中的数量= 1]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:12:48 : 进入购物车后，点击去结算按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:12:49 : 商品总额= 139.6]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:12:49 : 运费= 0.0]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:02 : 定位到首页的登录按钮位置]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:02 : 点击首页的登录按钮入口]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:03 : 用户名=18616781132]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:03 : 密码=snail123]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:03 : 点击登录按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:13 : 登录成功后跳转回首页]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:14 : 点击首页的购物车按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:14 : 购物车有商品]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:14 : 清空购物车]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:17 : 成功提示信息： 加入购物车成功]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:17 : 该商品在购物车中的数量= 1]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:17 : 进入购物车后，点击去结算按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:19 : 商品总额= 115.0]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:19 : 运费= 0.0]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:19 : 生鲜商品运费校验 测试场景通过]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:31 : 定位到首页的登录按钮位置]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:32 : 点击首页的登录按钮入口]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:32 : 用户名=18616781132]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:32 : 密码=snail123]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:32 : 点击登录按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:43 : 登录成功后跳转回首页]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:43 : 点击首页的购物车按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:46 : 购物车有商品]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:46 : 清空购物车]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:49 : 成功提示信息： 加入购物车成功]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:50 : 该商品在购物车中的数量= 1]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:50 : 进入购物车后，点击去结算按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:51 : [运费]  deliveryFee=5.0]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:51 : 商品总额= 15.8]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:51 : 商品总重量= 0.6]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:51 : 配送方式=物流配送]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:51 : 实际显示的运费= 5.0]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:13:51 : 小于48元重量小于等于5kg常温商品 测试场景通过]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:05 : 定位到首页的登录按钮位置]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:05 : 点击首页的登录按钮入口]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:05 : 用户名=18616781132]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:05 : 密码=snail123]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:05 : 点击登录按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:16 : 登录成功后跳转回首页]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:16 : 点击首页的购物车按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:16 : 购物车有商品]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:16 : 清空购物车]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:19 : 成功提示信息： 加入购物车成功]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:20 : 该商品在购物车中的数量= 1]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:20 : 进入购物车后，点击去结算按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:21 : [运费]  deliveryFee=7.0]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:21 : 商品总额= 14.2]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:21 : 商品总重量= 7.0]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:21 : 配送方式=物流配送]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:21 : 实际显示的运费= 7.0]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:21 : 小于48元重量大于5kg常温商品-自营 测试场景通过]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:34 : 定位到首页的登录按钮位置]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:34 : 点击首页的登录按钮入口]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:35 : 用户名=18616781132]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:35 : 密码=snail123]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:35 : 点击登录按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:46 : 登录成功后跳转回首页]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:46 : 点击首页的购物车按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:46 : 购物车有商品]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:46 : 清空购物车]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:49 : 成功提示信息： 加入购物车成功]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:49 : 该商品在购物车中的数量= 1]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:49 : 进入购物车后，点击去结算按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:50 : [运费]  deliveryFee=0.0]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:50 : 商品总额= 106.0]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:50 : 商品总重量= 0.375]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:50 : 配送方式=物流配送]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:50 : 实际显示的运费= 0.0]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:14:50 : 大于等于48元重量小于5kg常温商品-自营 测试场景通过]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:04 : 定位到首页的登录按钮位置]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:05 : 点击首页的登录按钮入口]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:05 : 用户名=18616781132]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:06 : 密码=snail123]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:06 : 点击登录按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:16 : 登录成功后跳转回首页]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:16 : 点击首页的购物车按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:17 : 购物车有商品]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:17 : 清空购物车]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:25 : 成功提示信息： 加入购物车成功]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:26 : 该商品在购物车中的数量= 1]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:26 : 进入购物车后，点击去结算按钮]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:27 : [运费]  deliveryFee=5.0]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:27 : 商品总额= 66.8]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:27 : 商品总重量= 10.0]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:27 : 配送方式=物流配送]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:27 : 实际显示的运费= 5.0]]>
+    </line>
+    <line>
+      <![CDATA[2016-03-07 12:15:27 : 大于48重量大于5KG的常温商品-自营 测试场景通过]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="189118" started-at="2016-03-07T04:12:18Z" finished-at="2016-03-07T04:15:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="189118" started-at="2016-03-07T04:12:18Z" finished-at="2016-03-07T04:15:27Z">
+      <class name="com.blemall.smokeTest.testcases.TestCase_05_ChargeFee">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="setUp" is-config="true" duration-ms="12565" started-at="2016-03-07T12:12:18Z" finished-at="2016-03-07T12:12:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="freshGoodsDeliveryFee(java.util.Map)[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="freshGoodsDeliveryFee" duration-ms="18406" started-at="2016-03-07T12:12:31Z" data-provider="providerMethod" finished-at="2016-03-07T12:12:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=snail123, deliveryFee=15, productID=200706, Level1Amount=99, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2016-03-07 12:12:33 : 定位到首页的登录按钮位置]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:12:33 : 点击首页的登录按钮入口]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:12:33 : 用户名=18616781132]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:12:33 : 密码=snail123]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:12:34 : 点击登录按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:12:44 : 登录成功后跳转回首页]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:12:44 : 点击首页的购物车按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:12:44 : 购物车无商品]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:12:48 : 成功提示信息： 加入购物车成功]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:12:48 : 该商品在购物车中的数量= 1]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:12:48 : 进入购物车后，点击去结算按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:12:49 : 商品总额= 139.6]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:12:49 : 运费= 0.0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- freshGoodsDeliveryFee -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="tearDown" is-config="true" duration-ms="178" started-at="2016-03-07T12:12:49Z" finished-at="2016-03-07T12:12:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="setUp" is-config="true" duration-ms="10984" started-at="2016-03-07T12:12:50Z" finished-at="2016-03-07T12:13:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="freshGoodsNoDeliveryFee(java.util.Map)[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="freshGoodsNoDeliveryFee" duration-ms="18027" started-at="2016-03-07T12:13:01Z" data-provider="providerMethod" finished-at="2016-03-07T12:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=snail123, deliveryFee=0, productID=178555, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2016-03-07 12:13:02 : 定位到首页的登录按钮位置]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:02 : 点击首页的登录按钮入口]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:03 : 用户名=18616781132]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:03 : 密码=snail123]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:03 : 点击登录按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:13 : 登录成功后跳转回首页]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:14 : 点击首页的购物车按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:14 : 购物车有商品]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:14 : 清空购物车]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:17 : 成功提示信息： 加入购物车成功]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:17 : 该商品在购物车中的数量= 1]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:17 : 进入购物车后，点击去结算按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:19 : 商品总额= 115.0]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:19 : 运费= 0.0]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:19 : 生鲜商品运费校验 测试场景通过]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- freshGoodsNoDeliveryFee -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="tearDown" is-config="true" duration-ms="179" started-at="2016-03-07T12:13:19Z" finished-at="2016-03-07T12:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="setUp" is-config="true" duration-ms="10856" started-at="2016-03-07T12:13:19Z" finished-at="2016-03-07T12:13:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="normalGoodsScenario1(java.util.Map)[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="normalGoodsScenario1" duration-ms="21300" started-at="2016-03-07T12:13:30Z" data-provider="providerMethod" finished-at="2016-03-07T12:13:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=snail123, productID=96361, scenario=小于48元重量小于等于5kg常温商品, deliveryWeight=0.6, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2016-03-07 12:13:31 : 定位到首页的登录按钮位置]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:32 : 点击首页的登录按钮入口]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:32 : 用户名=18616781132]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:32 : 密码=snail123]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:32 : 点击登录按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:43 : 登录成功后跳转回首页]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:43 : 点击首页的购物车按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:46 : 购物车有商品]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:46 : 清空购物车]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:49 : 成功提示信息： 加入购物车成功]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:50 : 该商品在购物车中的数量= 1]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:50 : 进入购物车后，点击去结算按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:51 : [运费]  deliveryFee=5.0]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:51 : 商品总额= 15.8]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:51 : 商品总重量= 0.6]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:51 : 配送方式=物流配送]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:51 : 实际显示的运费= 5.0]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:13:51 : 小于48元重量小于等于5kg常温商品 测试场景通过]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- normalGoodsScenario1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="tearDown" is-config="true" duration-ms="170" started-at="2016-03-07T12:13:51Z" finished-at="2016-03-07T12:13:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="setUp" is-config="true" duration-ms="11836" started-at="2016-03-07T12:13:51Z" finished-at="2016-03-07T12:14:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="normalGoodsScenario2(java.util.Map)[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="normalGoodsScenario2" duration-ms="17892" started-at="2016-03-07T12:14:03Z" data-provider="providerMethod" finished-at="2016-03-07T12:14:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=snail123, productID=86859, scenario=小于48元重量大于5kg常温商品-自营, deliveryWeight=7.0, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2016-03-07 12:14:05 : 定位到首页的登录按钮位置]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:05 : 点击首页的登录按钮入口]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:05 : 用户名=18616781132]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:05 : 密码=snail123]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:05 : 点击登录按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:16 : 登录成功后跳转回首页]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:16 : 点击首页的购物车按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:16 : 购物车有商品]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:16 : 清空购物车]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:19 : 成功提示信息： 加入购物车成功]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:20 : 该商品在购物车中的数量= 1]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:20 : 进入购物车后，点击去结算按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:21 : [运费]  deliveryFee=7.0]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:21 : 商品总额= 14.2]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:21 : 商品总重量= 7.0]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:21 : 配送方式=物流配送]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:21 : 实际显示的运费= 7.0]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:21 : 小于48元重量大于5kg常温商品-自营 测试场景通过]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- normalGoodsScenario2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="tearDown" is-config="true" duration-ms="209" started-at="2016-03-07T12:14:21Z" finished-at="2016-03-07T12:14:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="setUp" is-config="true" duration-ms="11522" started-at="2016-03-07T12:14:21Z" finished-at="2016-03-07T12:14:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="normalGoodsScenario3(java.util.Map)[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="normalGoodsScenario3" duration-ms="17821" started-at="2016-03-07T12:14:33Z" data-provider="providerMethod" finished-at="2016-03-07T12:14:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=snail123, productID=67042, scenario=大于等于48元重量小于5kg常温商品-自营, deliveryWeight=0.375, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2016-03-07 12:14:34 : 定位到首页的登录按钮位置]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:34 : 点击首页的登录按钮入口]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:35 : 用户名=18616781132]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:35 : 密码=snail123]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:35 : 点击登录按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:46 : 登录成功后跳转回首页]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:46 : 点击首页的购物车按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:46 : 购物车有商品]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:46 : 清空购物车]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:49 : 成功提示信息： 加入购物车成功]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:49 : 该商品在购物车中的数量= 1]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:49 : 进入购物车后，点击去结算按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:50 : [运费]  deliveryFee=0.0]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:50 : 商品总额= 106.0]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:50 : 商品总重量= 0.375]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:50 : 配送方式=物流配送]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:50 : 实际显示的运费= 0.0]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:14:50 : 大于等于48元重量小于5kg常温商品-自营 测试场景通过]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- normalGoodsScenario3 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="tearDown" is-config="true" duration-ms="174" started-at="2016-03-07T12:14:50Z" finished-at="2016-03-07T12:14:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="setUp" is-config="true" duration-ms="10829" started-at="2016-03-07T12:14:51Z" finished-at="2016-03-07T12:15:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="normalGoodsScenario4(java.util.Map)[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="normalGoodsScenario4" duration-ms="25646" started-at="2016-03-07T12:15:01Z" data-provider="providerMethod" finished-at="2016-03-07T12:15:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=snail123, productID=65791, scenario=大于48重量大于5KG的常温商品-自营, deliveryWeight=10, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2016-03-07 12:15:04 : 定位到首页的登录按钮位置]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:05 : 点击首页的登录按钮入口]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:05 : 用户名=18616781132]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:06 : 密码=snail123]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:06 : 点击登录按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:16 : 登录成功后跳转回首页]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:16 : 点击首页的购物车按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:17 : 购物车有商品]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:17 : 清空购物车]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:25 : 成功提示信息： 加入购物车成功]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:26 : 该商品在购物车中的数量= 1]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:26 : 进入购物车后，点击去结算按钮]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:27 : [运费]  deliveryFee=5.0]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:27 : 商品总额= 66.8]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:27 : 商品总重量= 10.0]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:27 : 配送方式=物流配送]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:27 : 实际显示的运费= 5.0]]>
+            </line>
+            <line>
+              <![CDATA[2016-03-07 12:15:27 : 大于48重量大于5KG的常温商品-自营 测试场景通过]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- normalGoodsScenario4 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@52af6cff]" name="tearDown" is-config="true" duration-ms="243" started-at="2016-03-07T12:15:27Z" finished-at="2016-03-07T12:15:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.blemall.smokeTest.testcases.TestCase_05_ChargeFee -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

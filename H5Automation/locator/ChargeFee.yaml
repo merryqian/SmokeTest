@@ -1,0 +1,222 @@
+location:
+  type:xpath
+  value:".//*[@id='mySwipe2']/div/div/a/img"
+loginEntrance:
+  type:xpath
+  value:".//*[@id='main']/div/section[4]/div/a"
+logo:
+  type:xpath
+  value:"html/body/main/div[1]/a/img"
+userName:
+  type:id
+  value:lgoinName
+password:
+  type:id
+  value:pwd
+loginButton:
+  type:id
+  value:loginButton
+shoppingCart:
+  type:xpath
+  value:".//*[@id='main']/div/header/a[1]"
+submitBtn:
+  type:id
+  value:submitBtn
+defaultAddress:
+  type:xpath
+  value:".//*[@id='reciverInfo']/div/div[2]/div[2]/i"
+reciverInfo:
+  type:id
+  value:receiverText
+addressLink:
+  type:xpath
+  value:".//*[@id='reciverInfo']/div"
+addressAdd:
+  type:id
+  value:add-addr
+reciverName:
+  type:id
+  value:reciverName
+reciverPhone:
+  type:id
+  value:reciverPhone
+provinceId:
+  type:id
+  value:provinceId
+cityId:
+  type:id
+  value:cityId
+districtId:
+  type:id
+  value:districtId
+address:
+  type:id
+  value:address
+isDefault:
+  type:id
+  value:isDefault
+addressSubmit:
+  type:id
+  value:addressid 
+isSuccess:
+  type:xpath
+  value:"//input[@name='reciver']"
+receiverNameText:
+  type:id
+  value:receiverNameText
+lab_orderreceiverMphone:
+  type:id
+  value:lab_orderreceiverMphone
+msgContext:
+  type:id
+  value:msgContext
+addrManager:
+  type:id
+  value:addrManager
+addAddrButton:
+  type:id
+  value:addAddrButton
+noGoods:
+  type:xpath
+  value:"html/body/div[1]/div[2]"
+editAll:
+  type:xpath
+  value:"html/body/header/div/a[2]"
+deleteBtn:
+  type:id
+  value:deleteBtn
+addButton:
+  type:id
+  value:addButton
+Completed:
+  type:xpath
+  value:"html/body/header/div/a[2]"
+AddSuccess:
+  type:xpath
+  value:".//*[@id='main']/div[3]"
+goodsNumInShoppingCart:
+  type:xpath
+  value:"//div/div[2]/div[2]/div[2]"
+toShoppingCart:
+  type:xpath
+  value:"html/body/div[1]/div[2]/div"
+vendorName:
+  type:xpath
+  value:"//li/div[1]/i"
+channelName:
+  type:xpath
+  value:"//li/div[1]/span"
+pictureLink:
+  type:xpath
+  value:"//li/div[3]/div[1]/a/img"
+goodsLink:
+  type:xpath
+  value:"//li/div[3]/div[3]/div[1]/a"
+goodsReturnNotSupported:
+  type:xpath
+  value:"//li/div[3]/div[3]/div[2]/span"
+goodsReturnSupported:
+  type:xpath
+  value:".//li/div[3]/div[3]/div[2]/span"
+sendTypeInfo:
+  type:xpath
+  value:"//li/div[4]/div[1]"
+sendTypeShow:
+  type:xpath
+  value:".//*[@id='sendTypeShow']/span"
+sendTime:
+  type:xpath
+  value:".//*[@id='bgfff-2']/div"
+sendTimeList1:
+  type:xpath
+  value:".//*[@id='peiSongList']/li[1]/label/span"
+sendTimeList2:
+  type:xpath
+  value:".//*[@id='peiSongList']/li[2]/label/span"
+sendTimeList3:
+  type:xpath
+  value:".//*[@id='peiSongList']/li[3]/label/span"
+onlyHoliday:
+  type:xpath
+  value:".//*[@id='peiSongList']/li[2]/label/input"
+submit_selected_delivery_info:
+  type:id
+  value:submit_selected_delivery_info
+sendTimeShowAfterChoose:
+  type:xpath
+  value:".//*[@id='sendTypeShow']/span/em"
+peiSong:
+  type:id
+  value:peiSong
+ziTi:
+  type:id
+  value:ziTi
+ziTiShopChoose:
+  type:xpath
+  value:".//*[@id='bgfff-1']/div[2]/div[1]/span"
+takeSelfShopArea:
+  type:xpath
+  value:".//*[@id='873']"
+takeSelfShop:
+  type:xpath
+  value:".//*[@id='shopList']/li[contains(text(),'联华超市武宁生活馆')]"
+takeSelfFee:
+  type:xpath
+  value:"//div[@class='money-show']/span[1]"
+totalOrderAmount:
+  type:id
+  value:totalOrderAmount
+totalDeliveryCost:
+  type:id
+  value:totalDeliveryCost
+payType:
+  type:xpath
+  value:".//*[@id='paymentOrderPanel']/div[2]/ul/li[4]/div/div[1]"
+payTypeContents:
+  type:id
+  value:payTypeContents
+toPayButton:
+  type:id
+  value:toPayButton
+payConfirm:
+  type:id
+  value:payConfirm
+COD:
+  type:xpath
+  value:".//*[@id='offLine']/div[1]"
+invoiceContent:
+  type:xpath
+  value:".//*[@id='paymentOrderPanel']/div[2]/ul/li[3]/div/div[2]/span"
+invoiceTitle:
+  type:xpath
+  value:".//*[@id='invoicePanel']/div[2]/div[2]/div[2]/input"
+invoiceConfirm:
+  type:id
+  value:invoiceConfirm
+notInvoice:
+  type:id
+  value:notInvoice
+goodNum:
+  type:xpath
+  value:"//div/div[2]/div[2]/div[2]"
+saleMoney:
+  type:xpath
+  value:".//div[3]/div[2]/p[1]"
+totalAmount:
+  type:id
+  value:orderPay_1013300001100
+totalOrderAmount:
+  type:id
+  value:totalOrderAmount
+orderTotalDiscount:
+  type:id
+  value:orderTotalDiscount
+totalDeliveryCost:
+  type:id
+  value:totalDeliveryCost
+orderPayAmt:
+  type:id
+  value:orderPayAmt
+noAddressAlert:
+  type:xpath
+  value:"html/body/div[2]"

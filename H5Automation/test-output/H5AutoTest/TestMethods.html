@@ -1,0 +1,1039 @@
+<html>
+<head>
+<title>TestNG:  TestMethods</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestMethods</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/6/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 07 09:36:20 CST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>1508 seconds (1508774 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart.A3_oneGoodsEditAddNum()'><b>A3_oneGoodsEditAddNum</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart<br>Parameters: {password=snail123, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-1075803699" onClick='toggleBox("Output-1075803699", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1075803699" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1075803699">
+2016-03-07 09:41:08 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:41:08 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:41:09 : 用户名=18616781132<br/>
+2016-03-07 09:41:09 : 密码=snail123<br/>
+2016-03-07 09:41:09 : 点击登录按钮<br/>
+2016-03-07 09:41:19 : 登录成功后跳转回首页<br/>
+2016-03-07 09:41:20 : 点击首页的购物车按钮<br/>
+2016-03-07 09:41:20 : 购物车不为空<br/>
+2016-03-07 09:41:20 : 当前购物车中有商品数量= 4<br/>
+2016-03-07 09:41:30 : 元素不存在,path=//div[@class='cart-show-list']/div/label/img[@name='canNotBuyImg']<br/>
+2016-03-07 09:41:30 : 当前找到的商品正常的商品，可以编辑<br/>
+2016-03-07 09:41:31 : 当前购物车中有商品数量= 4<br/>
+2016-03-07 09:41:31 : 购物车中编辑单个商品-增加商品数量  测试场景不通过<br/>
+2016-03-07 09:41:31 : 当前购物车中有商品数量= 4<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart.goodsEditAddNum(TestCase_03_ShoppingCart.java:581)
+	at com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart.A3_oneGoodsEditAddNum(TestCase_03_ShoppingCart.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1075803699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1075803699'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart.goodsEditAddNum(TestCase_03_ShoppingCart.java:581)
+	at com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart.A3_oneGoodsEditAddNum(TestCase_03_ShoppingCart.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+</pre></div></td>
+<td>24</td>
+<td>com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart@5056dfcb</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.companyInvoiceCheck()'><b>companyInvoiceCheck</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_04_CreateOrder<br>Parameters: {invoiceContent=明细, password=snail123, productID=95840, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, invoiceType=单位, invoiceTitle=百联集团, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-1099552523" onClick='toggleBox("Output-1099552523", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1099552523" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1099552523">
+2016-03-07 09:53:05 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:53:06 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:53:06 : 用户名=18616781132<br/>
+2016-03-07 09:53:06 : 密码=snail123<br/>
+2016-03-07 09:53:06 : 点击登录按钮<br/>
+2016-03-07 09:53:16 : 登录成功后跳转回首页<br/>
+2016-03-07 09:53:17 : 点击首页的购物车按钮<br/>
+2016-03-07 09:54:20 : By.xpath: //div/div[2]/div[2]/div[2] is not exist until 60<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.gotoShoppingCart(TestCase_04_CreateOrder.java:477)
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.companyInvoiceCheck(TestCase_04_CreateOrder.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1099552523", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1099552523'><pre>java.lang.NullPointerException
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.gotoShoppingCart(TestCase_04_CreateOrder.java:477)
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.companyInvoiceCheck(TestCase_04_CreateOrder.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+</pre></div></td>
+<td>76</td>
+<td>com.blemall.smokeTest.testcases.TestCase_04_CreateOrder@153f5a29</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.goodsSaleNumCheck()'><b>goodsSaleNumCheck</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_04_CreateOrder<br>Parameters: {password=snail123, productID=95840, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-246003654" onClick='toggleBox("Output-246003654", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-246003654" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-246003654">
+2016-03-07 09:55:21 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:55:22 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:55:23 : 用户名=18616781132<br/>
+2016-03-07 09:55:23 : 密码=snail123<br/>
+2016-03-07 09:55:23 : 点击登录按钮<br/>
+2016-03-07 09:55:34 : 登录成功后跳转回首页<br/>
+2016-03-07 09:55:34 : 点击首页的购物车按钮<br/>
+2016-03-07 09:55:37 : 购物车有商品<br/>
+2016-03-07 09:55:37 : 清空购物车<br/>
+2016-03-07 09:55:40 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 09:55:40 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 09:55:40 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 09:56:41 : [[FirefoxDriver: firefox on WINDOWS (3cc2a2fd-001c-4f37-a3ec-c63c3562f62f)] -> xpath: //div/div[2]/div[2]/div[2]] is not displayed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.checkgoodsSaleNum(TestCase_04_CreateOrder.java:253)
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.goodsSaleNumCheck(TestCase_04_CreateOrder.java:161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+</pre></div><a href='#' onClick='toggleBox("stack-trace246003654", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace246003654'><pre>java.lang.NullPointerException
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.checkgoodsSaleNum(TestCase_04_CreateOrder.java:253)
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.goodsSaleNumCheck(TestCase_04_CreateOrder.java:161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+</pre></div></td>
+<td>81</td>
+<td>com.blemall.smokeTest.testcases.TestCase_04_CreateOrder@153f5a29</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_05_ChargeFee.normalGoodsScenario2()'><b>normalGoodsScenario2</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_05_ChargeFee<br>Parameters: {password=snail123, productID=86859, scenario=小于48元重量大于5kg常温商品-自营, deliveryWeight=7.0, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-1623060829" onClick='toggleBox("Output-1623060829", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1623060829" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1623060829">
+2016-03-07 10:00:01 : 定位到首页的登录按钮位置<br/>
+2016-03-07 10:00:01 : 点击首页的登录按钮入口<br/>
+2016-03-07 10:00:02 : 用户名=18616781132<br/>
+2016-03-07 10:00:02 : 密码=snail123<br/>
+2016-03-07 10:00:02 : 点击登录按钮<br/>
+2016-03-07 10:00:13 : 登录成功后跳转回首页<br/>
+2016-03-07 10:00:13 : 点击首页的购物车按钮<br/>
+2016-03-07 10:00:13 : 购物车有商品<br/>
+2016-03-07 10:00:13 : 清空购物车<br/>
+2016-03-07 10:00:16 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 10:00:17 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 10:00:17 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 10:00:18 : [运费]  deliveryFee=7.0<br/>
+2016-03-07 10:00:18 : 商品总额= 14.2<br/>
+2016-03-07 10:00:18 : 商品总重量= 7.0<br/>
+2016-03-07 10:00:18 : 配送方式=物流配送<br/>
+2016-03-07 10:00:18 : 实际显示的运费= 0.0<br/>
+2016-03-07 10:00:18 : 小于48元重量大于5kg常温商品-自营 测试场景不通过<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: 小于48元重量大于5kg常温商品-自营 测试场景不通过
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.blemall.smokeTest.testcases.TestCase_05_ChargeFee.checkFee(TestCase_05_ChargeFee.java:319)
+	at com.blemall.smokeTest.testcases.TestCase_05_ChargeFee.normalGoodsScenario2(TestCase_05_ChargeFee.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1623060829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1623060829'><pre>java.lang.AssertionError: 小于48元重量大于5kg常温商品-自营 测试场景不通过
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.blemall.smokeTest.testcases.TestCase_05_ChargeFee.checkFee(TestCase_05_ChargeFee.java:319)
+	at com.blemall.smokeTest.testcases.TestCase_05_ChargeFee.normalGoodsScenario2(TestCase_05_ChargeFee.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+</pre></div></td>
+<td>19</td>
+<td>com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@6574b225</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.selfTakeCheck()'><b>selfTakeCheck</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_04_CreateOrder<br>Parameters: {password=snail123, productID=127944, sendShop=联华超市武宁生活馆, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, sendType=门店自提, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-1603696865" onClick='toggleBox("Output-1603696865", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1603696865" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1603696865">
+2016-03-07 09:49:06 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:49:06 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:49:06 : 用户名=18616781132<br/>
+2016-03-07 09:49:06 : 密码=snail123<br/>
+2016-03-07 09:49:06 : 点击登录按钮<br/>
+2016-03-07 09:49:16 : 登录成功后跳转回首页<br/>
+2016-03-07 09:49:17 : 点击首页的购物车按钮<br/>
+2016-03-07 09:49:17 : 购物车有商品<br/>
+2016-03-07 09:49:17 : 清空购物车<br/>
+2016-03-07 09:49:23 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 09:49:23 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 09:49:23 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 09:49:25 : 点击门店自提<br/>
+2016-03-07 09:50:27 : [[FirefoxDriver: firefox on WINDOWS (00e5baa2-d3b6-4fa9-86e2-e154ab53644f)] -> xpath: .//*[@id='873']] is not displayed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.checkSelfTake(TestCase_04_CreateOrder.java:359)
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.selfTakeCheck(TestCase_04_CreateOrder.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1603696865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1603696865'><pre>java.lang.NullPointerException
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.checkSelfTake(TestCase_04_CreateOrder.java:359)
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.selfTakeCheck(TestCase_04_CreateOrder.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+</pre></div></td>
+<td>83</td>
+<td>com.blemall.smokeTest.testcases.TestCase_04_CreateOrder@153f5a29</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.selfTakeFeeCheck()'><b>selfTakeFeeCheck</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_04_CreateOrder<br>Parameters: {password=snail123, productID=127944, sendShop=快客中环一店, fee=0.00, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, sendType=门店自提, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-333793193" onClick='toggleBox("Output-333793193", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-333793193" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-333793193">
+2016-03-07 09:51:12 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:51:12 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:51:12 : 用户名=18616781132<br/>
+2016-03-07 09:51:14 : 密码=snail123<br/>
+2016-03-07 09:51:14 : 点击登录按钮<br/>
+2016-03-07 09:51:24 : 登录成功后跳转回首页<br/>
+2016-03-07 09:51:25 : 点击首页的购物车按钮<br/>
+2016-03-07 09:51:25 : 购物车有商品<br/>
+2016-03-07 09:51:25 : 清空购物车<br/>
+2016-03-07 09:51:29 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 09:51:30 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 09:51:30 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 09:51:31 : 点击门店自提<br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalMonitorStateException
+	at java.lang.Object.wait(Native Method)
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.checkSelfTakeFee(TestCase_04_CreateOrder.java:653)
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.selfTakeFeeCheck(TestCase_04_CreateOrder.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+</pre></div><a href='#' onClick='toggleBox("stack-trace333793193", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace333793193'><pre>java.lang.IllegalMonitorStateException
+	at java.lang.Object.wait(Native Method)
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.checkSelfTakeFee(TestCase_04_CreateOrder.java:653)
+	at com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.selfTakeFeeCheck(TestCase_04_CreateOrder.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+</pre></div></td>
+<td>21</td>
+<td>com.blemall.smokeTest.testcases.TestCase_04_CreateOrder@153f5a29</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart.A1_addToCartFromSearch()'><b>A1_addToCartFromSearch</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart<br>Parameters: {password=snail123, searchKey=薯片, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-1533524862" onClick='toggleBox("Output-1533524862", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1533524862" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1533524862">
+2016-03-07 09:39:19 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:39:19 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:39:20 : 用户名=18616781132<br/>
+2016-03-07 09:39:21 : 密码=snail123<br/>
+2016-03-07 09:39:21 : 点击登录按钮<br/>
+2016-03-07 09:39:32 : 登录成功后跳转回首页<br/>
+2016-03-07 09:39:45 : 元素不存在,path=.//*[@id='goodslist']/div[2]<br/>
+2016-03-07 09:39:45 : 是否加入成功=加入购物车成功<br/>
+2016-03-07 09:39:45 : 加入购物车成功<br/>
+2016-03-07 09:39:45 : 商品列表页加入购物车 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart@5056dfcb</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart.A2_addToShopCart()'><b>A2_addToShopCart</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart<br>Parameters: {searchKey=薯片, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=}<br/>
+<a href="#Output-919446210" onClick='toggleBox("Output-919446210", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-919446210" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-919446210">
+2016-03-07 09:40:38 : 元素不存在,path=.//*[@id='goodslist']/div[2]<br/>
+2016-03-07 09:40:38 : 比较了1 次，找到了有库存的商品<br/>
+2016-03-07 09:40:41 : 点击了加入购物车按钮后: 加入购物车成功<br/>
+2016-03-07 09:40:42 : 购物车中的商品数量= 1<br/>
+2016-03-07 09:40:42 : 加入购物车的商品数量与预期的相等<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart@5056dfcb</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart.A4_oneGoodsEditDeleteNum()'><b>A4_oneGoodsEditDeleteNum</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart<br>Parameters: {password=snail123, productID=178555, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-643489709" onClick='toggleBox("Output-643489709", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-643489709" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-643489709">
+2016-03-07 09:41:54 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:41:54 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:41:54 : 用户名=18616781132<br/>
+2016-03-07 09:41:54 : 密码=snail123<br/>
+2016-03-07 09:41:55 : 点击登录按钮<br/>
+2016-03-07 09:42:05 : 登录成功后跳转回首页<br/>
+2016-03-07 09:42:05 : 点击首页的购物车按钮<br/>
+2016-03-07 09:42:05 : 购物车不为空<br/>
+2016-03-07 09:42:05 : 当前购物车中有商品数量= 4<br/>
+2016-03-07 09:42:15 : 元素不存在,path=//div[@class='cart-show-list']/div/label/img[@name='canNotBuyImg']<br/>
+2016-03-07 09:42:16 : 当前找到的商品正常的商品，可以编辑<br/>
+2016-03-07 09:42:16 : 当前购物车中有商品数量= 3<br/>
+2016-03-07 09:42:16 : 购物车中编辑单个商品-减少商品数量  测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart@5056dfcb</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart.A5_addGoodNumCheckStock()'><b>A5_addGoodNumCheckStock</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart<br>Parameters: {password=snail123, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-1180858072" onClick='toggleBox("Output-1180858072", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1180858072" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1180858072">
+2016-03-07 09:42:59 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:42:59 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:43:01 : 用户名=18616781132<br/>
+2016-03-07 09:43:01 : 密码=snail123<br/>
+2016-03-07 09:43:01 : 点击登录按钮<br/>
+2016-03-07 09:43:11 : 登录成功后跳转回首页<br/>
+2016-03-07 09:43:11 : 点击首页的购物车按钮<br/>
+2016-03-07 09:43:12 : 购物车不为空<br/>
+2016-03-07 09:43:12 : 当前购物车中有商品数量= 3<br/>
+2016-03-07 09:43:12 : 库存校验提示： 可售库存为3件哦！<br/>
+2016-03-07 09:43:13 : 购物车中增加商品库存校验功能  测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart@5056dfcb</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart.A6_oneGoodToSubmit()'><b>A6_oneGoodToSubmit</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart<br>Parameters: {password=snail123, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-250112971" onClick='toggleBox("Output-250112971", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-250112971" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-250112971">
+2016-03-07 09:44:12 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:44:12 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:44:14 : 用户名=18616781132<br/>
+2016-03-07 09:44:14 : 密码=snail123<br/>
+2016-03-07 09:44:14 : 点击登录按钮<br/>
+2016-03-07 09:44:24 : 登录成功后跳转回首页<br/>
+2016-03-07 09:44:24 : 点击首页的购物车按钮<br/>
+2016-03-07 09:44:25 : 购物车不为空<br/>
+2016-03-07 09:44:25 : 当前购物车中有商品数量= 3<br/>
+2016-03-07 09:44:25 : 预期跳转的链接= http://m.bl.com/h5-web/order/viewMultiGoodsPayOrder.html<br/>
+2016-03-07 09:44:26 : 实际的链接跳转http://m.bl.com/h5-web/order/viewMultiGoodsPayOrder.html<br/>
+2016-03-07 09:44:26 : 预期的值与实际的值相等<br/>
+2016-03-07 09:44:26 : 实付款： 151.6 显示<br/>
+2016-03-07 09:44:26 : 立即支付 按钮显示<br/>
+2016-03-07 09:44:26 : 进入订单确认页成功
+ 选择商品进入结算页面 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart@5056dfcb</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart.A7_oneGoodsEditDelete()'><b>A7_oneGoodsEditDelete</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart<br>Parameters: {password=snail123, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-973843173" onClick='toggleBox("Output-973843173", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-973843173" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-973843173">
+2016-03-07 09:46:05 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:46:05 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:46:05 : 用户名=18616781132<br/>
+2016-03-07 09:46:05 : 密码=snail123<br/>
+2016-03-07 09:46:05 : 点击登录按钮<br/>
+2016-03-07 09:46:16 : 登录成功后跳转回首页<br/>
+2016-03-07 09:46:16 : 点击首页的购物车按钮<br/>
+2016-03-07 09:46:16 : 购物车不为空<br/>
+2016-03-07 09:46:27 : 元素不存在,path=//div[@class='cart-show-list']/div/label/img[@name='canNotBuyImg']<br/>
+2016-03-07 09:46:27 : 当前找到的商品正常的商品，可以编辑<br/>
+2016-03-07 09:46:27 : 当前商品数量= 3<br/>
+2016-03-07 09:46:27 : 要删除的商品数量= 2<br/>
+2016-03-07 09:46:27 : 当前商品数量= 1<br/>
+2016-03-07 09:46:27 : 删除成功,购物车剩余商品数量与预期相等<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart@5056dfcb</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.addAddress()'><b>addAddress</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_04_CreateOrder<br>Parameters: {password=snail123, reciverName=钱多多, districtId=浦东新区, address=我是测试的地址, reciverPhone=18661027891, cityId=市辖区, provinceId=上海市, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-1104422581" onClick='toggleBox("Output-1104422581", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1104422581" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1104422581">
+2016-03-07 09:47:08 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:47:08 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:47:11 : 用户名=18616781132<br/>
+2016-03-07 09:47:13 : 密码=snail123<br/>
+2016-03-07 09:47:13 : 点击登录按钮<br/>
+2016-03-07 09:47:23 : 登录成功后跳转回首页<br/>
+2016-03-07 09:47:23 : 点击首页的购物车按钮<br/>
+2016-03-07 09:47:24 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 09:47:25 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 09:47:27 : 点击订单确认页的收货地址框<br/>
+2016-03-07 09:47:30 : 点击添加收货地址按钮<br/>
+2016-03-07 09:47:36 : 输入收件人= 钱多多<br/>
+2016-03-07 09:47:36 : 输入收件人电话= 18661027891<br/>
+2016-03-07 09:47:37 : 选择省份=上海市<br/>
+2016-03-07 09:47:37 : 选择城市=市辖区<br/>
+2016-03-07 09:47:37 : 选择区县=浦东新区<br/>
+2016-03-07 09:47:37 : 输入具体收货地址=我是测试的地址<br/>
+2016-03-07 09:47:37 : 点击新增收货地址按钮<br/>
+2016-03-07 09:47:38 : 收件人= 钱多多<br/>
+2016-03-07 09:47:38 : 手机= 18661027891<br/>
+2016-03-07 09:47:38 : 校验新增收货地址 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>com.blemall.smokeTest.testcases.TestCase_04_CreateOrder@153f5a29</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_05_ChargeFee.freshGoodsDeliveryFee()'><b>freshGoodsDeliveryFee</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_05_ChargeFee<br>Parameters: {password=snail123, deliveryFee=15, productID=200706, Level1Amount=99, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-673672784" onClick='toggleBox("Output-673672784", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-673672784" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-673672784">
+2016-03-07 09:58:42 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:58:43 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:58:43 : 用户名=18616781132<br/>
+2016-03-07 09:58:43 : 密码=snail123<br/>
+2016-03-07 09:58:43 : 点击登录按钮<br/>
+2016-03-07 09:58:53 : 登录成功后跳转回首页<br/>
+2016-03-07 09:58:53 : 点击首页的购物车按钮<br/>
+2016-03-07 09:58:54 : 购物车有商品<br/>
+2016-03-07 09:58:54 : 清空购物车<br/>
+2016-03-07 09:59:00 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 09:59:01 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 09:59:01 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 09:59:02 : 商品总额= 24.6<br/>
+2016-03-07 09:59:02 : 运费= 15.0<br/>
+2016-03-07 09:59:02 : 生鲜商品运费校验 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@6574b225</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_05_ChargeFee.freshGoodsNoDeliveryFee()'><b>freshGoodsNoDeliveryFee</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_05_ChargeFee<br>Parameters: {password=snail123, deliveryFee=0, productID=178555, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-338620258" onClick='toggleBox("Output-338620258", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-338620258" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-338620258">
+2016-03-07 10:01:11 : 定位到首页的登录按钮位置<br/>
+2016-03-07 10:01:11 : 点击首页的登录按钮入口<br/>
+2016-03-07 10:01:11 : 用户名=18616781132<br/>
+2016-03-07 10:01:11 : 密码=snail123<br/>
+2016-03-07 10:01:11 : 点击登录按钮<br/>
+2016-03-07 10:01:22 : 登录成功后跳转回首页<br/>
+2016-03-07 10:01:22 : 点击首页的购物车按钮<br/>
+2016-03-07 10:01:22 : 购物车有商品<br/>
+2016-03-07 10:01:22 : 清空购物车<br/>
+2016-03-07 10:01:26 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 10:01:27 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 10:01:27 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 10:01:28 : 商品总额= 115.0<br/>
+2016-03-07 10:01:28 : 运费= 0.0<br/>
+2016-03-07 10:01:28 : 生鲜商品运费校验 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@6574b225</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.goodsSaleMoneyCheck()'><b>goodsSaleMoneyCheck</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_04_CreateOrder<br>Parameters: {password=snail123, saleMoney=119.90, productID=95840, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-1453606810" onClick='toggleBox("Output-1453606810", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1453606810" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1453606810">
+2016-03-07 09:54:42 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:54:42 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:54:43 : 用户名=18616781132<br/>
+2016-03-07 09:54:43 : 密码=snail123<br/>
+2016-03-07 09:54:43 : 点击登录按钮<br/>
+2016-03-07 09:54:53 : 登录成功后跳转回首页<br/>
+2016-03-07 09:54:53 : 点击首页的购物车按钮<br/>
+2016-03-07 09:54:54 : 购物车无商品<br/>
+2016-03-07 09:54:56 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 09:54:57 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 09:54:57 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 09:54:57 : 预期结算商品金额= 119.90<br/>
+2016-03-07 09:54:58 : 订单确认页面的结算商品金额= 119.90<br/>
+2016-03-07 09:54:58 : 结算商品金额检查 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.blemall.smokeTest.testcases.TestCase_04_CreateOrder@153f5a29</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_01_Login.loginSuccess()'><b>loginSuccess</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_01_Login<br>Parameters: {password=wobugaosuni1, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18516042869}<br/>
+<a href="#Output-171421438" onClick='toggleBox("Output-171421438", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-171421438" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-171421438">
+2016-03-07 09:37:26 : 打开首页连接=http://m.bl.com/h5-web/page/view_Index.html<br/>
+2016-03-07 09:37:27 : 你要找的元素出现了<br/>
+2016-03-07 09:37:27 : 首页打开成功<br/>
+2016-03-07 09:37:27 : 点击首页的登录按钮<br/>
+2016-03-07 09:37:31 : 登录成功<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.blemall.smokeTest.testcases.TestCase_01_Login@32e6e9c3</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_05_ChargeFee.normalGoodsScenario1()'><b>normalGoodsScenario1</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_05_ChargeFee<br>Parameters: {password=snail123, productID=96361, scenario=小于48元重量小于等于5kg常温商品, deliveryWeight=0.6, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-1970073944" onClick='toggleBox("Output-1970073944", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1970073944" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1970073944">
+2016-03-07 09:59:19 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:59:19 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:59:20 : 用户名=18616781132<br/>
+2016-03-07 09:59:20 : 密码=snail123<br/>
+2016-03-07 09:59:20 : 点击登录按钮<br/>
+2016-03-07 09:59:30 : 登录成功后跳转回首页<br/>
+2016-03-07 09:59:30 : 点击首页的购物车按钮<br/>
+2016-03-07 09:59:33 : 购物车有商品<br/>
+2016-03-07 09:59:33 : 清空购物车<br/>
+2016-03-07 09:59:35 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 09:59:37 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 09:59:37 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 09:59:38 : [运费]  deliveryFee=5.0<br/>
+2016-03-07 09:59:38 : 商品总额= 15.8<br/>
+2016-03-07 09:59:38 : 商品总重量= 0.6<br/>
+2016-03-07 09:59:38 : 配送方式=物流配送<br/>
+2016-03-07 09:59:38 : 实际显示的运费= 5.0<br/>
+2016-03-07 09:59:38 : 小于48元重量小于等于5kg常温商品 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@6574b225</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_05_ChargeFee.normalGoodsScenario3()'><b>normalGoodsScenario3</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_05_ChargeFee<br>Parameters: {password=snail123, productID=67042, scenario=大于等于48元重量小于5kg常温商品-自营, deliveryWeight=0.375, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-1377301456" onClick='toggleBox("Output-1377301456", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1377301456" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1377301456">
+2016-03-07 10:00:38 : 定位到首页的登录按钮位置<br/>
+2016-03-07 10:00:38 : 点击首页的登录按钮入口<br/>
+2016-03-07 10:00:38 : 用户名=18616781132<br/>
+2016-03-07 10:00:38 : 密码=snail123<br/>
+2016-03-07 10:00:39 : 点击登录按钮<br/>
+2016-03-07 10:00:49 : 登录成功后跳转回首页<br/>
+2016-03-07 10:00:49 : 点击首页的购物车按钮<br/>
+2016-03-07 10:00:50 : 购物车有商品<br/>
+2016-03-07 10:00:50 : 清空购物车<br/>
+2016-03-07 10:00:53 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 10:00:53 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 10:00:53 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 10:00:54 : [运费]  deliveryFee=0.0<br/>
+2016-03-07 10:00:54 : 商品总额= 106.0<br/>
+2016-03-07 10:00:54 : 商品总重量= 0.375<br/>
+2016-03-07 10:00:54 : 配送方式=物流配送<br/>
+2016-03-07 10:00:54 : 实际显示的运费= 0.0<br/>
+2016-03-07 10:00:54 : 大于等于48元重量小于5kg常温商品-自营 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.blemall.smokeTest.testcases.TestCase_05_ChargeFee@6574b225</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.orderAmountDetailsCheck()'><b>orderAmountDetailsCheck</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_04_CreateOrder<br>Parameters: {password=snail123, productID=69709, orderPayAmt=8.4, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-749486981" onClick='toggleBox("Output-749486981", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-749486981" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-749486981">
+2016-03-07 09:57:52 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:57:52 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:57:53 : 用户名=18616781132<br/>
+2016-03-07 09:57:54 : 密码=snail123<br/>
+2016-03-07 09:57:54 : 点击登录按钮<br/>
+2016-03-07 09:58:04 : 登录成功后跳转回首页<br/>
+2016-03-07 09:58:04 : 点击首页的购物车按钮<br/>
+2016-03-07 09:58:04 : 购物车有商品<br/>
+2016-03-07 09:58:04 : 清空购物车<br/>
+2016-03-07 09:58:08 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 09:58:09 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 09:58:09 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 09:58:09 : 预期的实付金额=8.4<br/>
+2016-03-07 09:58:10 : totalOrderAmount=3.4<br/>
+2016-03-07 09:58:10 : orderTotalDiscount=-0.0<br/>
+2016-03-07 09:58:10 : totalDeliveryCost=5.0<br/>
+2016-03-07 09:58:10 : 实际的实付金额=8.4<br/>
+2016-03-07 09:58:10 : 实付金额检查 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.blemall.smokeTest.testcases.TestCase_04_CreateOrder@153f5a29</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.payNow()'><b>payNow</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_04_CreateOrder<br>Parameters: {password=snail123, payType=在线支付, productID=166250, expectTitle=收银台, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-1685407532" onClick='toggleBox("Output-1685407532", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1685407532" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1685407532">
+2016-03-07 09:52:11 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:52:12 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:52:13 : 用户名=18616781132<br/>
+2016-03-07 09:52:13 : 密码=snail123<br/>
+2016-03-07 09:52:14 : 点击登录按钮<br/>
+2016-03-07 09:52:24 : 登录成功后跳转回首页<br/>
+2016-03-07 09:52:25 : 点击首页的购物车按钮<br/>
+2016-03-07 09:52:25 : 购物车有商品<br/>
+2016-03-07 09:52:25 : 清空购物车<br/>
+2016-03-07 09:52:29 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 09:52:29 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 09:52:29 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 09:52:31 : 默认支付方式： 在线支付<br/>
+2016-03-07 09:52:31 : 在线支付
+可使用百联会员卡或积点卡支付<br/>
+2016-03-07 09:52:34 : actualTitle=收银台<br/>
+2016-03-07 09:52:34 : 在线支付检查 测试用例场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>com.blemall.smokeTest.testcases.TestCase_04_CreateOrder@153f5a29</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.sendTimeChooseCheck()'><b>sendTimeChooseCheck</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_04_CreateOrder<br>Parameters: {SendTime=仅节假日配送, password=snail123, productID=77644, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-20804602" onClick='toggleBox("Output-20804602", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20804602" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20804602">
+2016-03-07 09:48:10 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:48:10 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:48:11 : 用户名=18616781132<br/>
+2016-03-07 09:48:11 : 密码=snail123<br/>
+2016-03-07 09:48:11 : 点击登录按钮<br/>
+2016-03-07 09:48:21 : 登录成功后跳转回首页<br/>
+2016-03-07 09:48:21 : 点击首页的购物车按钮<br/>
+2016-03-07 09:48:22 : 购物车有商品<br/>
+2016-03-07 09:48:22 : 清空购物车<br/>
+2016-03-07 09:48:25 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 09:48:26 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 09:48:26 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 09:48:27 : 进入到选择配送时间段页面,列表如下<br/>
+2016-03-07 09:48:27 : 配送时间<br/>
+2016-03-07 09:48:27 : 仅工作日配送<br/>
+2016-03-07 09:48:27 : 仅节假日配送<br/>
+2016-03-07 09:48:27 : 工作日、节假日均可配送<br/>
+2016-03-07 09:48:27 : 选择了配送时段后=仅节假日配送<br/>
+2016-03-07 09:48:27 : 选择配送时段= 仅节假日配送<br/>
+2016-03-07 09:48:27 : 选择配送时段  测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.blemall.smokeTest.testcases.TestCase_04_CreateOrder@153f5a29</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_04_CreateOrder.totalAmountCheck()'><b>totalAmountCheck</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_04_CreateOrder<br>Parameters: {password=snail123, saleMoney=3.4, productID=69709, fee=5.00, link=http://m.bl.com/h5-web/product/scanBuy.html?productid=, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18616781132}<br/>
+<a href="#Output-194415222" onClick='toggleBox("Output-194415222", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-194415222" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-194415222">
+2016-03-07 09:56:59 : 定位到首页的登录按钮位置<br/>
+2016-03-07 09:56:59 : 点击首页的登录按钮入口<br/>
+2016-03-07 09:57:00 : 用户名=18616781132<br/>
+2016-03-07 09:57:00 : 密码=snail123<br/>
+2016-03-07 09:57:00 : 点击登录按钮<br/>
+2016-03-07 09:57:10 : 登录成功后跳转回首页<br/>
+2016-03-07 09:57:11 : 点击首页的购物车按钮<br/>
+2016-03-07 09:57:11 : 购物车有商品<br/>
+2016-03-07 09:57:11 : 清空购物车<br/>
+2016-03-07 09:57:14 : 成功提示信息： 加入购物车成功<br/>
+2016-03-07 09:57:15 : 该商品在购物车中的数量= 1<br/>
+2016-03-07 09:57:15 : 进入购物车后，点击去结算按钮<br/>
+2016-03-07 09:57:16 : 合计金额=8.4<br/>
+2016-03-07 09:57:16 : 合计金额检查 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.blemall.smokeTest.testcases.TestCase_04_CreateOrder@153f5a29</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_01_Login.usernameNotExist()'><b>usernameNotExist</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_01_Login<br>Parameters: {password=435345, expectedAlert=此账号不存在!, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=1851604200}<br/>
+<a href="#Output-417557780" onClick='toggleBox("Output-417557780", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-417557780" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-417557780">
+2016-03-07 09:38:42 : 打开首页连接=http://m.bl.com/h5-web/page/view_Index.html<br/>
+2016-03-07 09:38:42 : 你要找的元素出现了<br/>
+2016-03-07 09:38:42 : 首页打开成功<br/>
+2016-03-07 09:38:43 : 点击首页的登录按钮<br/>
+2016-03-07 09:38:44 : 用户名不存在预期提示信息= 此账号不存在!<br/>
+2016-03-07 09:38:44 : 用户名不存在实际提示信息= 此账号不存在!<br/>
+2016-03-07 09:38:44 : "登录名不存在-错误提示" 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.blemall.smokeTest.testcases.TestCase_01_Login@32e6e9c3</td></tr>
+<tr>
+<td title='com.blemall.smokeTest.testcases.TestCase_01_Login.wrongPasswordAlert()'><b>wrongPasswordAlert</b><br>Test class: com.blemall.smokeTest.testcases.TestCase_01_Login<br>Parameters: {password=435345, expectedAlert=用户名或者密码错误!, url=http://m.bl.com/h5-web/product/scanBuy.html?productid=, username=18516042869}<br/>
+<a href="#Output-1311844206" onClick='toggleBox("Output-1311844206", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1311844206" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1311844206">
+2016-03-07 09:38:08 : 打开首页连接=http://m.bl.com/h5-web/page/view_Index.html<br/>
+2016-03-07 09:38:08 : 你要找的元素出现了<br/>
+2016-03-07 09:38:08 : 首页打开成功<br/>
+2016-03-07 09:38:08 : 点击首页的登录按钮<br/>
+2016-03-07 09:38:10 : 预期提示=用户名或者密码错误!<br/>
+2016-03-07 09:38:10 : 实际提示=用户名或者密码错误!<br/>
+2016-03-07 09:38:10 : 密码错误提示= 用户名或者密码错误!<br/>
+2016-03-07 09:38:10 : 登录页面登录 - 密码错误提示 测试场景通过<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.blemall.smokeTest.testcases.TestCase_01_Login@32e6e9c3</td></tr>
+</table><p>
+</body>
+</html>

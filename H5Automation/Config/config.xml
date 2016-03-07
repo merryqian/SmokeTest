@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config skipped="0">
+   
+ <browser>firefox</browser>
+ <waitTime>60</waitTime>
+ <pathURL>http://m.bl.com/h5-web/page/view_Index.html</pathURL>
+</config>

@@ -1,0 +1,47 @@
+location:
+  type:xpath
+  value:".//*[@id='mySwipe2']/div/div/a/img"
+loginEntrance:
+  type:xpath
+  value:".//*[@id='main']/div/section[4]/div/a"
+logo:
+  type:xpath
+  value:"html/body/main/div[2]/a/img"
+userName:
+  type:id
+  value:lgoinName
+password:
+  type:id
+  value:pwd
+forgetPassword:
+  type:xpath
+  value:"html/body/div[2]/div[2]/div[3]/div[2]/a"
+forgetPasswordText:
+  type:xpath
+  value:"html/body/header/h2"
+freeRegister:
+  type:xpath
+  value:"html/body/div[2]/div[2]/div[4]/div[2]/a"
+solidButton:
+  type:id
+  value:cardFirstLogin
+solidClick:
+  type:xpath
+  value:"html/body/main/div[2]/div[5]/a/span"
+register-form-phone:
+  type:id
+  value:register-form-phone
+
+solidLoginTitle:
+  type:xpath
+  value:"html/body/header/h2"
+loginButton:
+  type:id
+  value:loginButton
+wrongAlert:
+  type:xpath
+  value:"html/body/div[3]"
+
+
+
+  

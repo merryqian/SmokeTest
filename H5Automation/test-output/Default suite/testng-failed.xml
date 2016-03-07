@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.blemall.smokeTest.testcases.TestCase_05_ChargeFee">
+        <methods>
+          <include name="setUp"/>
+          <include name="normalGoodsScenario4" invocation-numbers="0"/>
+          <include name="normalGoodsScenario3" invocation-numbers="0"/>
+          <include name="normalGoodsScenario2" invocation-numbers="0"/>
+          <include name="normalGoodsScenario1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.blemall.smokeTest.testcases.TestCase_05_ChargeFee -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

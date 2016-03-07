@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [H5AutoTest]">
+  <test name="TestMethods(failed)">
+    <classes>
+      <class name="com.blemall.smokeTest.testcases.TestCase_04_CreateOrder">
+        <methods>
+          <include name="selfTakeFeeCheck" invocation-numbers="0"/>
+          <include name="companyInvoiceCheck" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="goodsSaleNumCheck" invocation-numbers="0"/>
+          <include name="selfTakeCheck" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.blemall.smokeTest.testcases.TestCase_04_CreateOrder -->
+      <class name="com.blemall.smokeTest.testcases.TestCase_01_Login">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.blemall.smokeTest.testcases.TestCase_01_Login -->
+      <class name="com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="A3_oneGoodsEditAddNum" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart -->
+      <class name="com.blemall.smokeTest.testcases.TestCase_05_ChargeFee">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="normalGoodsScenario2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.blemall.smokeTest.testcases.TestCase_05_ChargeFee -->
+    </classes>
+  </test> <!-- TestMethods(failed) -->
+</suite> <!-- Failed suite [H5AutoTest] -->

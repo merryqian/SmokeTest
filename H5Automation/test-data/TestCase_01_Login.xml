@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<common>	
+	http://m.bl.com/h5-web/page/view_Index.html			
+	</common>
+	
+	<wrongPasswordAlert>
+	    <username>18516042869</username>
+	    <password>435345</password>
+	    <expectedAlert>用户名或者密码错误!</expectedAlert>
+	</wrongPasswordAlert>
+	<usernameNotExist>
+	     <username>1851604200</username>
+	    <password>435345</password>
+	    <expectedAlert>此账号不存在!</expectedAlert>
+	</usernameNotExist>
+	<loginSuccess>
+	    <username>18516042869</username>
+	    <password>wobugaosuni1</password> 
+	</loginSuccess>
+
+</data>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<common>	
+	</common>
+
+	<A1_addToCartFromSearch>
+	     <username>18616781132</username>
+	    <password>snail123</password>
+	    <searchKey>薯片</searchKey>
+	</A1_addToCartFromSearch>
+	
+	<A2_addToShopCart>
+	    <searchKey>薯片</searchKey>
+	</A2_addToShopCart>
+	
+	<A3_oneGoodsEditAddNum>
+	    <username>18616781132</username>
+	    <password>snail123</password>
+	</A3_oneGoodsEditAddNum>
+	
+	<A4_oneGoodsEditDeleteNum>
+	    <username>18616781132</username>
+	    <password>snail123</password>
+	    <productID>178555</productID>
+	    <link>http://m.bl.com/h5-web/product/scanBuy.html?productid=</link>
+	</A4_oneGoodsEditDeleteNum>
+	
+	<A5_addGoodNumCheckStock>
+	    <username>18616781132</username>
+	    <password>snail123</password>
+	</A5_addGoodNumCheckStock>
+	
+	<A6_oneGoodToSubmit>
+	    <username>18616781132</username>
+	    <password>snail123</password>
+	</A6_oneGoodToSubmit>
+	
+	<A7_oneGoodsEditDelete>
+	    <username>18616781132</username>
+	    <password>snail123</password>
+	</A7_oneGoodsEditDelete>
+
+</data>
