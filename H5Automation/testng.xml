@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- allow-return-values 默认值为FALSE,表示返回值将被忽略 -->
+<suite name="H5AutoTest" parallel="false" >
+	<test verbose="2" name="TestMethods" preserve-order="true">
+		<classes>
+	
+		   <class name="com.blemall.smokeTest.testcases.TestCase_01_Login">
+				<methods preserve-order="true">
+				 <include name="loginSuccess"/>
+                 <include name="wrongPasswordAlert"/>
+                 <include name="usernameNotExist"/>
+				</methods>
+			</class>
+		    
+			<class name="com.blemall.smokeTest.testcases.TestCase_03_ShoppingCart">
+				<methods preserve-order="true">
+				   <include name="A1_addToCartFromSearch"/>
+				    <include name="A2_addToShopCart"/>
+				    <include name="A3_oneGoodsEditAddNum"/>
+				    <include name="A4_oneGoodsEditDeleteNum"/>
+				    <include name="A5_addGoodNumCheckStock"/>
+				    <include name="A6_oneGoodToSubmit"/>
+				    <include name="A7_oneGoodsEditDelete"/>
+				</methods>
+			</class>
+			
+			<class name="com.blemall.smokeTest.testcases.TestCase_04_CreateOrder">
+				<methods preserve-order="true">
+				   <include name="addAddress"/>
+				    <include name="sendTimeChooseCheck"/>
+				    <include name="selfTakeCheck"/>
+				    <include name="selfTakeFeeCheck"/>
+				    <include name="payNow"/>
+				    <include name="companyInvoiceCheck"/>
+				    <include name="goodsSaleMoneyCheck"/>
+				    <include name="goodsSaleNumCheck"/>
+				    <include name="totalAmountCheck"/>
+				    <include name="orderAmountDetailsCheck"/>
+				</methods>
+			</class>
+			
+			<class name="com.blemall.smokeTest.testcases.TestCase_05_ChargeFee">
+				<methods preserve-order="true">
+				    <include name="freshGoodsDeliveryFee"/>
+				    <include name="normalGoodsScenario1"/>
+				    <include name="normalGoodsScenario2"/>
+				    <include name="normalGoodsScenario3"/>
+				    <include name="freshGoodsNoDeliveryFee"/>
+				    
+				</methods>
+			</class>
+			</classes>
+	</test>
+</suite>
