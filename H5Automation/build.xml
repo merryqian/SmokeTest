@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<project name="selenium" default="run_tests" basedir=".">
+<project name="ant" default="sendmail" basedir=".">
     <property name="src" value="src"/>
     <property name="dest" value="classes"/>
     <!--<property name="lib.dir" value="lib" />-->
@@ -17,7 +17,19 @@
         <mkdir dir="${dest}"/>
     </target>
     <target name="compile" depends="init" >
-        <javac srcdir="${src}" destdir="${dest}" classpathref="compile.path" includeantruntime="on"/>
+        	<mkdir dir="${dest}" />
+		<javac destdir="${dest}" includeantruntime="false" debug="on" encoding="UTF-8">
+			<!-- <compilerarg line="-encoding UTF-8"/> -->
+			<classpath refid="classpath" />
+			<src path="${src}" />
+			<include name="*.java" />
+			<include name="**/*.java" />
+		</javac>
+		<copy todir="${dest}">
+			<fileset dir="${src}">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
     </target>
      <!--run testng ant task-->
      <taskdef resource="testngtasks" classpath="${lib.dir}/testng-6.8.jar"/>        
@@ -45,4 +57,29 @@
             <!--<classpath refid="compile.path" />-->
         </xslt>
     </target>
+    
+	
+	<!--============================================================================= 
+	+	Read test result after Selenium  execution		 							+
+	==============================================================================-->
+	<target name="sendmail" depends="transform">
+		<loadfile property="mail.content" srcfile="${basedir}/mail_content.txt"></loadfile>
+		<echo message="Send mail by ${mail.usernamefrom} to ${mail.toList}..."/>
+		<tstamp>
+			<format property="current.date" pattern="yyyy.MM.dd hh:mm"/>
+		</tstamp>
+		<mail mailhost="${mail.host}" user="${mail.username}" password="${mail.password}" 
+			from="${mail.usernamefrom}" tolist="${mail.toList}" 
+			subject="${test.result}||Selenium 自动化测试 [${test.suite.name}](${current.date})"
+			charset="UTF-8">
+			<attachments>
+				<fileset dir="${my.report.dir}" >
+					<include name="*.xlsx"/>
+				</fileset>
+			</attachments>
+			<message>${mail.content}</message>
+		</mail>
+	</target>
+	
+
 </project>
